@@ -4,12 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Branch root = initTree();
+            Branch root = InitTree();
             BranchTraverser branchTraverser = new BranchTraverser();
-            Console.WriteLine("Tree's depth is: " + branchTraverser.getTreeDepth(root));
+            Console.WriteLine("Tree's depth is: " + branchTraverser.GetTreeDepth(root));
         }
 
-        private static Branch initTree()
+        private static Branch InitTree()
         {
             Branch root = BranchFactory.CreateBranchInstance();
             root.Branches = BranchFactory.CreateBranchList(2);

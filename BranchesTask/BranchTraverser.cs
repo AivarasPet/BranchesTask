@@ -8,7 +8,7 @@ namespace BranchesTask
 {
     public class BranchTraverser
     {
-        public int getTreeDepth(Branch root)
+        public int GetTreeDepth(Branch root)
         {
             if(root == null)
             {
@@ -22,7 +22,7 @@ namespace BranchesTask
             int max = 0;
             foreach(Branch branch in root.Branches)
             {
-                max = Math.Max(max, getTreeDepth(branch));
+                max = Math.Max(max, GetTreeDepth(branch));
             }
             return max + 1;
         } 
